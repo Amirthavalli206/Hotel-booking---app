@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amirtha's Hotel</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f7f7f7;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            width: 100%;
+            background: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #d63384;
+        }
+
+        .menu a,
+        .right-menu a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .account {
+            cursor: pointer;
+            color: #444;
+        }
+
+        
+        .hero {
+            width: 100%;
+            height: 100vh;
+            background-image: url("images/2690586.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            background: rgba(0,0,0,0.3);
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+        }
+
+        .hero span {
+            color: #ff79c6;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* SEARCH BOX */
+        .search-section {
+            display: flex;
+            justify-content: center;
+            margin-top: -40px;
+        }
+
+        .search-box {
+            background: white;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-group label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        .input-group input,
+        .input-group select {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-btn {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 22px;
+        }
+
+        .search-btn:hover {
+            background: #555;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #444;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">AMIRTHA HOTEL</div>
+        <div class="menu">
+            <a href="#">Browse all rooms</a>
+            <a href="#">Manage Rooms</a>
+        </div>
+        <div class="right-menu">
+            <a href="#">Find my booking</a>
+            <div class="account">Account ▾</div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Welcome to <span>AMIRTHA HOTEL</span></h1>
+            <p>Experience the Best Hospitality in Town</p>
+        </div>
+    </div>
+
+    <!-- SEARCH BOX -->
+    <div class="search-section">
+        <form class="search-box">
+            <div class="input-group">
+                <label>Check-in Date</label>
+                <input type="date">
+            </div>
+
+            <div class="input-group">
+                <label>Check-out Date</label>
+                <input type="date">
+            </div>
+
+            <div class="input-group">
+                <label>Room Type</label>
+                <select>
+                    <option>Select a room type</option>
+                    <option>Single</option>
+                    <option>Double</option>
+                    <option>Suite</option>
+                </select>
+            </div>
+
+            <button class="search-btn">Search</button>
+        </form>
+    </div>
+
+    <footer>
+        ©2023 ETC hotel
+    </footer>
+
+</body>
+</html>
